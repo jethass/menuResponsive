@@ -1,0 +1,50 @@
+@import "compass";
+/*
+variable
+*/
+$bg-header:#2e7d32;
+/*
+base
+*/
+html, body {
+	font-family: arial;
+	font-size :16px;
+	line-height: 1.4;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+a {text-decoration:none; color:inherit;}
+.container{
+	margin: 0 20px;
+	@include clearfix;
+}
+.site-content{padding-top: 66px;}
+
+/*
+header
+*/
+.header{
+	position:fixed;
+	left: 0;
+	right: 0;
+	height: 66px;
+	line-height: 66px;
+	color:#fff;
+	background-color: $bg-header;
+}
+.header_logo{
+	font-weight: bold;
+	padding: 0 25px;
+	float: left;
+}
+.menu{
+	float: left;
+	a{padding: 0 10px;}
+	a:hover {color: #c6ff00;}
+}
+/*
+ responsive
+*/
+
+@import "responsive";
